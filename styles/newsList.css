@@ -3,3 +3,67 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+button:hover {
+  cursor: pointer;
+}
+
+.main-container {
+  padding: 1rem;
+}
+
+.list-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.table-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 5rem 0 2rem;
+}
+
+.table-header-cell {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.875rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 750;
+}
+
+.text-zinc-500 {
+  color: #6c757d;
+}
+
+.text-zinc-700 {
+  color: #4a5568;
+}
+
+.action-buttons {
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.5rem;
+  border: 0.5px solid grey;
+  width: 64px;
+  height: 28px;
+  font-weight: 750;
+}
+
+.action-td {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
