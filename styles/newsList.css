@@ -8,6 +8,10 @@ button:hover {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
 .main-container {
   padding: 1rem;
 }
@@ -66,4 +70,27 @@ button:hover {
   justify-content: start;
   align-items: center;
   gap: 1rem;
+}
+
+.news-loading {
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #000;
+  --_m: conic-gradient(#0000 10%, #000000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
 }
