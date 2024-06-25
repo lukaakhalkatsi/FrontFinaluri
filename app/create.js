@@ -1,4 +1,10 @@
 const createBtn = document.querySelector(".create-news");
+const cancelBtn = document.querySelector(".cancel-btn");
+
+cancelBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  window.location.href = "../index.html";
+});
 
 createBtn.addEventListener("click", async function (e) {
   e.preventDefault();
@@ -15,6 +21,11 @@ createBtn.addEventListener("click", async function (e) {
     editorLastName: lname,
   };
   console.log(postData);
+
+  if (!title || !desc || !category || !fname || !lname) {
+    alert("All fields are required!");
+    return;
+  }
 
   try {
     const response = await fetch(
