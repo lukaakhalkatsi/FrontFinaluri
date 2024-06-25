@@ -37,7 +37,7 @@ async function deleteNews(id) {
   const tr = tableBody.querySelector(`tr[data-id="${id}"]`);
   if (!tr) return;
 
-  tr.classList.add("fade-out");
+  tr.classList.add("slide-out");
   const response = await fetch(
     `https://btu-exam-cb6c3fdf3b9d.herokuapp.com/news/${id}`,
     {
