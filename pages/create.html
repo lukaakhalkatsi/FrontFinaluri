@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/createNews.css" />
+    <script type="module" defer src="../app/create.js"></script>
+  </head>
+  <body>
+    <div class="create-container">
+      <h1>Create News</h1>
+      <form>
+        <div>
+          <label>Title</label>
+          <input type="text" placeholder="Title..." class="title" />
+        </div>
+        <div>
+          <label>Description</label>
+          <textarea id="" class="desc"></textarea>
+        </div>
+        <label for="cars">Category</label>
+        <select name="cars" id="cars" class="category">
+          <option value="Politics">Politics</option>
+          <option value="Science">Science</option>
+          <option value="Lifestyle">Lifestyle</option>
+          <option value="Technology">Technology</option>
+        </select>
+        <div>
+          <label>Editor FirstName</label>
+          <input type="text" placeholder="FirstName..." class="fname" />
+        </div>
+        <div>
+          <label>Editor LastName</label>
+          <input type="text" placeholder="LastName..." class="lname" />
+        </div>
+
+        <button class="create-news">Create</button>
+      </form>
+    </div>
+  </body>
+</html>
