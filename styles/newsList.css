@@ -124,12 +124,6 @@ select {
   margin-top: 3rem;
 }
 
-@keyframes l3 {
-  to {
-    transform: rotate(1turn);
-  }
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -205,4 +199,10 @@ i:hover {
 
 .confirm-update:hover {
   background-color: #439768;
+}
+
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
 }
