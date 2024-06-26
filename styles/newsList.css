@@ -2,6 +2,27 @@ button:hover {
   cursor: pointer;
 }
 
+label {
+  margin-bottom: 0.2rem;
+}
+
+input {
+  padding: 0.6rem;
+  border-radius: 0.7rem;
+}
+
+select {
+  padding: 0.7rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.update-desc {
+  resize: none;
+  height: 120px;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
+
 .hidden {
   display: none;
 }
@@ -66,6 +87,26 @@ button:hover {
   gap: 1rem;
 }
 
+.delete-btn:hover {
+  background-color: red;
+  color: #fff;
+  border: none;
+  transition: 0.1s ease-in;
+}
+
+.update-btn:hover {
+  background-color: #0000ff;
+  color: #fff;
+  border: none;
+  transition: 0.1s ease-in;
+}
+
+.create:hover {
+  background-color: #439768;
+  color: #fff;
+  border: none;
+}
+
 .news-loading {
   width: 50px;
   padding: 8px;
@@ -87,4 +128,81 @@ button:hover {
   to {
     transform: rotate(1turn);
   }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.update-popup {
+  width: 40%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1100;
+}
+
+.update-editor {
+  gap: 20px;
+}
+
+.update-editor div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+i {
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+i:hover {
+  color: #6c757d;
+}
+
+.update-header {
+  margin-bottom: 1.4rem;
+}
+
+.update-container div {
+  display: flex;
+}
+
+.action-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.confirm-update {
+  width: 8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #65a765;
+  color: #fff;
+  border: 1px solid lightgray;
+  margin-top: 1.4rem;
+}
+
+.confirm-update:hover {
+  background-color: #439768;
 }

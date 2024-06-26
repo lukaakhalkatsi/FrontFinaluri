@@ -6,6 +6,13 @@
     <title>News</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/newsList.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script type="module" defer src="app/script.js"></script>
   </head>
   <body>
@@ -40,6 +47,58 @@
         <tbody class="table-body"></tbody>
       </table>
       <div class="news-loading hidden"></div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="update-popup hidden">
+      <i class="fa-solid fa-xmark close"></i>
+      <div class="update-container">
+        <h1 class="update-header">Update News</h1>
+        <div class="action-container">
+          <label>New Title</label>
+          <input
+            type="text"
+            placeholder="Enter New Title..."
+            class="update-title"
+          />
+        </div>
+        <div class="action-container">
+          <label>New Description</label>
+          <textarea
+            class="update-desc"
+            type="text"
+            placeholder="Enter New Description..."
+          ></textarea>
+        </div>
+        <div class="action-container">
+          <label>Update Category</label>
+          <select class="update-category">
+            <option value="Politics">Politics</option>
+            <option value="Science">Science</option>
+            <option value="Lifestyle">Lifestyle</option>
+            <option value="Technology">Technology</option>
+          </select>
+        </div>
+
+        <div class="update-editor">
+          <div>
+            <label>Editor FirstName</label>
+            <input
+              type="text"
+              placeholder="New FirstName..."
+              class="editor-firstname"
+            />
+          </div>
+          <div>
+            <label>Editor LastName</label>
+            <input
+              type="text"
+              placeholder="New LastName..."
+              class="editor-lastname"
+            />
+          </div>
+        </div>
+        <button class="confirm-update">Confirm</button>
+      </div>
     </div>
   </body>
 </html>

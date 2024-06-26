@@ -4,6 +4,7 @@
 
 h1 {
   margin-bottom: 3rem;
+  font-size: 2.4rem;
 }
 
 h1,
@@ -12,7 +13,11 @@ label {
 }
 
 label {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.1rem;
+}
+
+form {
+  padding: 1rem;
 }
 
 form div {

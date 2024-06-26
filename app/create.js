@@ -20,7 +20,6 @@ createBtn.addEventListener("click", async function (e) {
     editorFirstName: fname,
     editorLastName: lname,
   };
-  console.log(postData);
 
   if (!title || !desc || !category || !fname || !lname) {
     alert("All fields are required!");
