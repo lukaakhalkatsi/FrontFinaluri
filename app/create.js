@@ -1,5 +1,6 @@
 const createBtn = document.querySelector(".create-news");
 const cancelBtn = document.querySelector(".cancel-btn");
+const currentDate = new Date().toLocaleDateString();
 
 cancelBtn.addEventListener("click", function (e) {
   e.preventDefault();
@@ -19,6 +20,8 @@ createBtn.addEventListener("click", async function (e) {
     category,
     editorFirstName: fname,
     editorLastName: lname,
+    currentDate,
+    dateUpdated: currentDate,
   };
 
   if (!title || !desc || !category || !fname || !lname) {
@@ -28,7 +31,7 @@ createBtn.addEventListener("click", async function (e) {
 
   try {
     const response = await fetch(
-      "https://btu-exam-cb6c3fdf3b9d.herokuapp.com/news",
+      "https://btu-ex-2025-0bf797fecbae.herokuapp.com/news",
       {
         method: "POST",
         headers: {
@@ -45,7 +48,6 @@ createBtn.addEventListener("click", async function (e) {
     }
 
     const data = await response.json();
-    console.log("Success:", data);
   } catch (error) {
     console.error("Error:", error);
   }
